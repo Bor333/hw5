@@ -64,13 +64,10 @@
    */
  document.querySelector('[aria-labelledby="dropdownMenuButton"]')
   .dataset.dd = 3;
-
   /*
   7. Удалите атрибут type у элемента с классом "dropdown-toggle".
    */
   delete document.querySelector(".dropdown-toggle").removeAttribute('type');
-
-
   /*
   8. Выведите в консоль все имеющиеся атрибуты и их значения тега у которого
   есть все два класса btn и dropdown-toggle.
@@ -82,8 +79,6 @@
   for (let i = 0; i < attrs.length; i++) {
     console.log(`Атрибут \"${attrs[i].name}\"  содержит значение \"${attrs[i].nodeValue}\"`);
   }
-
-
 </script>
 </body>
 </html>
